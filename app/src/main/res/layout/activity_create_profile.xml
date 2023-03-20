@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".CreateProfileActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:src="@drawable/teal_700_circle"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-45dp"
+        android:layout_marginRight="-45dp"
+        />
+
+    <ImageView
+        android:src="@drawable/teal_200_circle"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="-85dp"
+        android:layout_marginBottom="25dp"
+
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foregroundGravity="center">
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+
+            tools:context=".SignInActivity">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="15dp"
+                android:text="Create Your Profile"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/image_view_avatar"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:src="@drawable/pic_circle"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/image_view_take_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/ic_baseline_camera_alt_24" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/label0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:text="Enter your Full Name"
+                android:textSize="18sp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edit_text_full_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_box_height"
+                android:background="@drawable/edit_text_back"
+                android:inputType="text"
+                android:paddingHorizontal="10dp" />
+
+            <TextView
+                android:id="@+id/label1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:text="Work Center"
+                android:textSize="18sp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edit_text_work_center"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_box_height"
+                android:background="@drawable/edit_text_back"
+                android:hint="You can type Individual"
+                android:inputType="text"
+                android:paddingHorizontal="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:text="Phone"
+                android:textSize="18sp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edit_text_phone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_box_height"
+                android:background="@drawable/edit_text_back"
+                android:inputType="phone"
+                android:paddingHorizontal="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:text="Your Bio"
+                android:textSize="18sp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edit_text_bio"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@drawable/edit_text_back"
+                android:gravity="top"
+                android:hint="Contains speciality and skills"
+                android:inputType="textMultiLine"
+                android:maxLines="5"
+                android:padding="15dp"
+                android:paddingHorizontal="10dp" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_set_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button_back"
+                    android:gravity="center"
+                    android:paddingHorizontal="45dp"
+                    android:paddingVertical="5dp"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="2"
+                    android:shadowDy="8"
+                    android:shadowRadius="8"
+                    android:text="Set"
+                    android:textAllCaps="false"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/text_view_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:text="Location not provided"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_create_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/button_back"
+                android:gravity="center"
+                android:paddingHorizontal="45dp"
+                android:paddingVertical="5dp"
+                android:shadowColor="@color/black"
+                android:shadowDx="2"
+                android:shadowDy="8"
+                android:shadowRadius="8"
+                android:text="Create Profile"
+                android:textAllCaps="false"
+                android:textSize="18sp" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+</RelativeLayout>

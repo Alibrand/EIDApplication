@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/home_back"
+
+    android:paddingHorizontal="20dp"
+    >
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:visibility="invisible"
+            android:layout_weight="1"
+            android:id="@+id/profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="left"
+            >
+            <ImageView
+                android:src="@drawable/profile"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                />
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="right">
+        <ImageView
+            android:src="@drawable/logout"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:tint="#504D4D" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"/>
+    </LinearLayout>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+    <TableLayout
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:stretchColumns="*"
+        android:shrinkColumns="*"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:gravity="center"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/button_interior_designers"
+                        android:layout_width="fill_parent"
+                        android:textColor="#5C5452"
+                        android:background="@drawable/home_button_back"
+                        android:lines="2"
+                        android:textSize="23sp"
+                        android:paddingHorizontal="20dp"
+                        android:paddingVertical="30dp"
+                        android:text="Interior Designers"
+                        android:shadowColor="#9C8781"
+                        android:shadowDx="2"
+                        android:shadowDy="13"
+                        android:shadowRadius="8"
+                        android:textAllCaps="false"
+                        android:layout_margin="10dp"
+                          />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_decor_stores"
+                android:layout_width="fill_parent"
+                android:textColor="#5C5452"
+                android:background="@drawable/home_button_back"
+                android:lines="2"
+                android:textSize="23sp"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="30dp"
+                android:text="Decor Stores"
+                android:shadowColor="#9C8781"
+                android:shadowDx="2"
+                android:shadowDy="13"
+                android:shadowRadius="8"
+                android:textAllCaps="false"
+                android:layout_margin="10dp"
+                />
+
+
+
+        </TableRow>
+        <TableRow
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_design_your_room"
+                android:layout_width="fill_parent"
+                android:textColor="#5C5452"
+                android:background="@drawable/home_button_back"
+                android:lines="2"
+                android:textSize="23sp"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="30dp"
+                android:text="Design Your Room"
+                android:shadowColor="#9C8781"
+                android:shadowDx="2"
+                android:shadowDy="13"
+                android:shadowRadius="8"
+                android:textAllCaps="false"
+                android:layout_margin="10dp"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_decor_offers"
+                android:layout_width="fill_parent"
+                android:textColor="#5C5452"
+                android:background="@drawable/home_button_back"
+                android:lines="2"
+                android:textSize="23sp"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="30dp"
+                android:text="Decor Offers"
+                android:shadowColor="#9C8781"
+                android:shadowDx="2"
+                android:shadowDy="13"
+                android:shadowRadius="8"
+                android:textAllCaps="false"
+                android:layout_margin="10dp"
+                />
+
+
+
+        </TableRow>
+    </TableLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_inbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#5C5452"
+        android:background="@drawable/home_button_back"
+        android:textSize="23sp"
+        android:gravity="center"
+        android:drawableLeft="@drawable/ic_baseline_mail_24"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="10dp"
+        android:text="Your Inbox"
+        android:shadowColor="#9C8781"
+        android:shadowDx="2"
+        android:shadowDy="13"
+        android:shadowRadius="8"
+        android:textAllCaps="false"
+        android:layout_margin="10dp"
+        />
+
+
+
+
+
+
+
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

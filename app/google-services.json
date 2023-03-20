@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "301713431429",
+    "project_id": "eida-1d376",
+    "storage_bucket": "eida-1d376.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:301713431429:android:6d815817c2febc407a82ec",
+        "android_client_info": {
+          "package_name": "com.ksacp2022.electronicinteriordesignapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "301713431429-n57dfspe3a04rch52gst4k4enmr98obh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPHSl6ojYHB5rZ2msmwkTjoEOaJDsoq7A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "301713431429-n57dfspe3a04rch52gst4k4enmr98obh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

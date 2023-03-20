@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".AddRoomDesignActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:src="@drawable/teal_700_circle"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-45dp"
+        android:layout_marginRight="-45dp"
+        />
+
+    <ImageView
+        android:src="@drawable/teal_200_circle"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="-85dp"
+        android:layout_marginBottom="25dp"
+
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foregroundGravity="center">
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="15dp"
+                android:text="Add Your Room Design"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:text="Design Name"
+                android:textSize="18sp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edit_text_design_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_box_height"
+                android:background="@drawable/edit_text_back"
+                android:inputType="text"
+                android:paddingHorizontal="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:text="Design Description"
+                android:textSize="18sp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edit_text_description"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@drawable/edit_text_back"
+                android:gravity="top"
+                android:hint=" "
+                android:inputType="textMultiLine"
+                android:maxLines="5"
+                android:padding="15dp"
+                android:paddingHorizontal="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:text="Choose color palette for your design"
+                android:textSize="18sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_add_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/button_back"
+                android:drawableLeft="@drawable/ic_baseline_add_24"
+                android:gravity="center"
+                android:paddingHorizontal="45dp"
+                android:paddingVertical="5dp"
+                android:shadowColor="@color/black"
+                android:text="Add to Color palette"
+                android:textAllCaps="false"
+                android:textSize="18sp" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_colors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:text="Upload images of your room"
+                android:textSize="18sp" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/button_take_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button_back"
+                    android:gravity="center"
+                    android:paddingHorizontal="45dp"
+                    android:paddingVertical="5dp"
+                    android:shadowColor="@color/black"
+                    android:src="@drawable/ic_baseline_photo_camera_24"
+                    android:text="Add to Color palette"
+                    android:textAllCaps="false"
+                    android:textSize="18sp" />
+
+                <ImageButton
+                    android:id="@+id/button_gallery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button_back"
+                    android:gravity="center"
+                    android:paddingHorizontal="45dp"
+                    android:paddingVertical="5dp"
+                    android:shadowColor="@color/black"
+                    android:src="@drawable/ic_baseline_photo_library_24"
+                    android:text="Add to Color palette"
+                    android:textAllCaps="false"
+                    android:textSize="18sp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_images"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_save_design"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/button_back"
+                android:gravity="center"
+                android:paddingHorizontal="45dp"
+                android:paddingVertical="5dp"
+                android:shadowColor="@color/black"
+                android:shadowDx="2"
+                android:shadowDy="8"
+                android:shadowRadius="8"
+                android:text="Save Room Design"
+                android:textAllCaps="false"
+                android:textSize="18sp" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+</RelativeLayout>

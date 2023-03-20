@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/home_back"
+tools:context=".DesignerMenuActivity"
+    android:paddingHorizontal="20dp"
+    >
+    <ImageView
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:id="@+id/image_view_avatar"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:src="@drawable/pic_circle"/>
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/text_view_designer_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="15dp"
+        android:text="Designer"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+    <TableLayout
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:stretchColumns="*"
+        android:shrinkColumns="*"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:gravity="center"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_edit_profile"
+                android:layout_width="fill_parent"
+                android:textColor="#5C5452"
+                android:background="@drawable/home_button_back"
+                android:lines="2"
+                android:textSize="23sp"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="30dp"
+                android:text="Edit Profile"
+                android:shadowColor="#9C8781"
+                android:shadowDx="2"
+                android:shadowDy="13"
+                android:shadowRadius="8"
+                android:textAllCaps="false"
+                android:layout_margin="10dp"
+                />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_art_works"
+                android:layout_width="fill_parent"
+                android:textColor="#5C5452"
+                android:background="@drawable/home_button_back"
+                android:lines="2"
+                android:textSize="23sp"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="30dp"
+                android:text="Art Works"
+                android:shadowColor="#9C8781"
+                android:shadowDx="2"
+                android:shadowDy="13"
+                android:shadowRadius="8"
+                android:textAllCaps="false"
+                android:layout_margin="10dp"
+                />
+
+
+
+        </TableRow>
+        <TableRow
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_inbox"
+                android:layout_width="fill_parent"
+                android:textColor="#5C5452"
+                android:background="@drawable/home_button_back"
+                android:lines="2"
+                android:textSize="23sp"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="30dp"
+                android:text="Inbox"
+                android:shadowColor="#9C8781"
+                android:shadowDx="2"
+                android:shadowDy="13"
+                android:shadowRadius="8"
+                android:textAllCaps="false"
+                android:layout_margin="10dp"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_reviews"
+                android:layout_width="fill_parent"
+                android:textColor="#5C5452"
+                android:background="@drawable/home_button_back"
+                android:lines="2"
+                android:textSize="23sp"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="30dp"
+                android:text="Reviews"
+                android:shadowColor="#9C8781"
+                android:shadowDx="2"
+                android:shadowDy="13"
+                android:shadowRadius="8"
+                android:textAllCaps="false"
+                android:layout_margin="10dp"
+                />
+
+
+
+        </TableRow>
+    </TableLayout>
+
+
+
+
+
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

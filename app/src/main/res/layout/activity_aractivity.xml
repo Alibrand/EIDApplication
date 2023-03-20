@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <io.github.sceneview.ar.ArSceneView
+        android:id="@+id/arFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageButton
+
+        android:id="@+id/exit"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_back"
+        android:padding="12dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_baseline_cancel_24"
+         android:layout_alignParentRight="true"
+
+          />
+
+    <ImageButton
+
+        android:id="@+id/capture"
+        android:layout_margin="10dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edit_text_back"
+        android:padding="12dp"
+        android:layout_alignParentLeft="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_baseline_camera_alt_24"
+
+
+        />
+
+
+
+
+</RelativeLayout>

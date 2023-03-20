@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--        android:layout_marginVertical="15dp"-->
+<!--        app:cardCornerRadius="25dp"-->
+<!--        android:padding="0dp"-->
+<!--    android:background="@null"-->
+<!--        android:id="@+id/card_view_art_work"-->
+<!--        android:layout_marginRight="5dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="120dp">-->
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:background="@drawable/edit_text_back"
+            android:layout_width="match_parent"
+    android:paddingVertical="1dp"
+    android:id="@+id/card_view_art_work"
+    android:layout_marginTop="10dp"
+            android:layout_height="120dp">
+
+            <ImageButton
+                android:id="@+id/image_button_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="15dp"
+                android:background="@null"
+                android:src="@drawable/ic_baseline_delete_24" />
+
+
+
+                <TextView
+                    android:layout_marginHorizontal="15dp"
+                    android:id="@+id/text_view_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/imge_card"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="Info"
+                    android:textStyle="bold" />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_alignParentLeft="true"
+                android:id="@+id/imge_card"
+                app:cardCornerRadius="25dp"
+                android:layout_width="150dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/image_view_avatar"
+                    android:scaleType="fitXY"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   />
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+
+<!--    </androidx.cardview.widget.CardView>-->
+

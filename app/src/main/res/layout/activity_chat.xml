@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_back"
+    android:orientation="vertical"
+    tools:context=".ChatActivity">
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/image_view_avatar"
+                android:src="@drawable/ic_baseline_account_circle_24"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+
+                <TextView
+                    android:id="@+id/text_user_name"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="Name"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            <ImageButton
+                android:id="@+id/button_shared_designs"
+                android:background="@null"
+                android:src="@drawable/ic_baseline_folder_shared_24"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="5dp"
+        app:cardCornerRadius="15dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:padding="5dp"
+            android:id="@+id/recycler_messages"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:background="@drawable/edit_text_back"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <EditText
+            android:id="@+id/edit_text_message"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageButton
+            android:id="@+id/button_gallery"
+            android:background="@null"
+            android:src="@drawable/ic_baseline_photo_library_24"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/progress_uploading"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+        <ImageButton
+            android:id="@+id/button_take_pic"
+            android:background="@null"
+            android:src="@drawable/ic_baseline_photo_camera_24"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+        <ImageButton
+            android:id="@+id/button_send"
+            android:background="@null"
+            android:src="@drawable/ic_baseline_send_24"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/progress_sending"
+            android:indeterminateTint="#29852D"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

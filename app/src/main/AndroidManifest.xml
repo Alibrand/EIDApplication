@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ksacp2022.electronicinteriordesignapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:glEsVersion="0x00030000"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.ar"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="false"
+        android:theme="@style/Theme.ElectronicInteriorDesignApplication"
+        android:usesCleartextTraffic="true"
+        android:requestLegacyExternalStorage="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".DecorStoreProductsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminAddDecorProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ARActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.ar.core"
+            android:value="optional" />
+
+        <activity
+            android:name=".MyDesignsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SharedDesignsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InboxActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminEditOfferActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DecorOfferActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DecorOffersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminDecorOffersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminAddOffersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DesignerMyReviewsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewRoomDesignActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddRoomDesignActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RoomDesignsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddReviewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DesignerReviewsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DecorStoreProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DecorStoresActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminStoreDecorsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminEditDecorStoreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminAddStoreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminStoresActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ImageViewerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ArtWorksActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddWorkArtActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DesignerArtWorksActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DesignerProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InteriorDesignersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DesignerMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ResetPasswordActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SignInActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

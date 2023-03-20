@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/home_back"
+    android:layout_height="match_parent">
+
+
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".DesignerProfileActivity">
+
+    <ImageView
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:id="@+id/image_view_avatar"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:src="@drawable/pic_circle"/>
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/text_view_designer_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="15dp"
+        android:text="Designer Name"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/button_like"
+                android:background="@null"
+                android:src="@drawable/ic_outline_thumb_up_24"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+            <TextView
+                android:id="@+id/text_likes_count"
+                android:text="0"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/button_reviews"
+                android:background="@null"
+                android:src="@drawable/ic_baseline_rate_review_24"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+            <TextView
+                android:id="@+id/text_reviews_count"
+                android:text="0"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:padding="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/edit_text_back"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Bio"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/text_view_bio"
+            android:text="Bio of designer"
+            android:textSize="17sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginBottom="15dp"
+        android:id="@+id/button_call"
+        android:paddingHorizontal="15dp"
+        android:drawableLeft="@drawable/ic_baseline_call_24"
+        android:text="Call"
+        android:textAllCaps="false"
+        android:background="@drawable/edit_text_back"
+        android:textSize="22sp"
+        android:textColor="#4A4242"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginBottom="15dp"
+        android:id="@+id/button_location"
+        android:paddingHorizontal="15dp"
+        android:drawableLeft="@drawable/ic_baseline_location_on_24"
+        android:text="Location"
+        android:textAllCaps="false"
+        android:background="@drawable/edit_text_back"
+        android:textSize="22sp"
+        android:textColor="#4A4242"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_chat"
+        android:paddingHorizontal="15dp"
+        android:drawableLeft="@drawable/ic_baseline_chat_24"
+        android:text="Chat"
+        android:textAllCaps="false"
+        android:background="@drawable/edit_text_back"
+        android:textSize="22sp"
+        android:textColor="#4A4242"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:padding="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/edit_text_back"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="1"
+                android:text="Art Works"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/text_view_see_all"
+                android:text="See All"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+       <androidx.recyclerview.widget.RecyclerView
+           android:id="@+id/recycler_view_art_works"
+           android:orientation="horizontal"
+           app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+</ScrollView>
